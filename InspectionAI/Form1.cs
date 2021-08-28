@@ -70,7 +70,7 @@ namespace Exhibition
                 GoodCount = 0;
                 CleanUI();
                 UpdateUI();
-                //UpdateChart();
+                UpdateChart();
             }
             if (CurrentDeployment == 0 && this.CurrentDeployment != CurrentDeployment)
             {
@@ -98,7 +98,7 @@ namespace Exhibition
         {
             HandleStructure(Detection);
             UpdateUI();
-            //UpdateChart();
+            UpdateChart();
         }
 
         public void CleanUI()
@@ -224,8 +224,6 @@ namespace Exhibition
         {
             chart1.Series["Defects"].Points.Clear();
             chart1.Series["Good"].Points.Clear();
-            chart1.Series["Defects"].Color = Color.Red;
-            chart1.Series["Good"].Color = Color.Green;
             if (ChartDuration == 0)
             {
                 var today = Detections.FindAll(x => x.Datetime.DayOfYear.Equals(DateTime.Now.DayOfYear));

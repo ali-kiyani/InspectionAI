@@ -576,6 +576,8 @@ namespace Exhibition
             this.chart1.Size = new System.Drawing.Size(817, 320);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "Insights";
+            chart1.Series["Defects"].Color = Color.Red;
+            chart1.Series["Good"].Color = Color.Green;
             // 
             // Form1
             // 
