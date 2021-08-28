@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Exhibition.CustomUI
 {
-    public class MyButton2 : Button
+    public class MyButton : Button
     {
         //Fields
         private int borderSize = 0;
@@ -16,7 +16,7 @@ namespace Exhibition.CustomUI
         private Color borderColor = Color.PaleVioletRed;
 
         //Constructor
-        public MyButton2()
+        public MyButton()
         {
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;

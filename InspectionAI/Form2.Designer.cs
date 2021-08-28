@@ -33,6 +33,9 @@ namespace Exhibition
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Step3 = new Exhibition.CustomUI.MyButton();
+            this.Step2 = new Exhibition.CustomUI.MyButton();
+            this.Step1 = new Exhibition.CustomUI.MyButton();
             this.Step2Box = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.MAP = new System.Windows.Forms.TextBox();
@@ -52,18 +55,24 @@ namespace Exhibition
             this.Dset = new System.Windows.Forms.Label();
             this.Recall = new System.Windows.Forms.TextBox();
             this.Step1Box = new System.Windows.Forms.GroupBox();
+            this.AddImages = new Exhibition.CustomUI.MyButton();
             this.SelectImage = new System.Windows.Forms.Label();
             this.UploadImages = new System.Windows.Forms.Label();
             this.ProjectName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.myButton2 = new Exhibition.CustomUI.MyButton();
+            this.myButton1 = new Exhibition.CustomUI.MyButton();
             this.label3 = new System.Windows.Forms.Label();
             this.defect1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.Step3Box = new System.Windows.Forms.GroupBox();
+            this.myButton4 = new Exhibition.CustomUI.MyButton();
+            this.myButton3 = new Exhibition.CustomUI.MyButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.Deploy2 = new Exhibition.CustomUI.MyButton();
             this.Map5 = new System.Windows.Forms.Label();
             this.ConfThresh4 = new System.Windows.Forms.Label();
             this.ModelName4 = new System.Windows.Forms.Label();
@@ -83,6 +92,7 @@ namespace Exhibition
             this.ConfThresh2 = new System.Windows.Forms.Label();
             this.ModelName2 = new System.Windows.Forms.Label();
             this.Camera1 = new System.Windows.Forms.ComboBox();
+            this.Deploy1 = new Exhibition.CustomUI.MyButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -104,6 +114,10 @@ namespace Exhibition
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Next = new Exhibition.CustomUI.MyButton();
+            this.Back = new Exhibition.CustomUI.MyButton();
+            this.myButton5 = new Exhibition.CustomUI.MyButton();
+            this.groupBox1.SuspendLayout();
             this.Step2Box.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.Step1Box.SuspendLayout();
@@ -118,14 +132,75 @@ namespace Exhibition
             // groupBox1
             // 
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox1.Controls.Add(this.Step3);
+            this.groupBox1.Controls.Add(this.Step2);
+            this.groupBox1.Controls.Add(this.Step1);
             this.groupBox1.Location = new System.Drawing.Point(531, 54);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(699, 94);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // Step3
+            // 
+            this.Step3.BackColor = System.Drawing.Color.Transparent;
+            this.Step3.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Step3.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.Step3.BorderRadius = 20;
+            this.Step3.BorderSize = 1;
+            this.Step3.FlatAppearance.BorderSize = 0;
+            this.Step3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Step3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Step3.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.Step3.Location = new System.Drawing.Point(474, 27);
+            this.Step3.Name = "Step3";
+            this.Step3.Size = new System.Drawing.Size(188, 50);
+            this.Step3.TabIndex = 0;
+            this.Step3.Text = "Step 3";
+            this.Step3.TextColor = System.Drawing.Color.MediumSlateBlue;
+            this.Step3.UseVisualStyleBackColor = false;
+            // 
+            // Step2
+            // 
+            this.Step2.BackColor = System.Drawing.Color.Transparent;
+            this.Step2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Step2.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.Step2.BorderRadius = 20;
+            this.Step2.BorderSize = 1;
+            this.Step2.FlatAppearance.BorderSize = 0;
+            this.Step2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Step2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Step2.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.Step2.Location = new System.Drawing.Point(240, 27);
+            this.Step2.Name = "Step2";
+            this.Step2.Size = new System.Drawing.Size(188, 50);
+            this.Step2.TabIndex = 0;
+            this.Step2.Text = "Step 2";
+            this.Step2.TextColor = System.Drawing.Color.MediumSlateBlue;
+            this.Step2.UseVisualStyleBackColor = false;
+            // 
+            // Step1
+            // 
+            this.Step1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.Step1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.Step1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Step1.BorderRadius = 20;
+            this.Step1.BorderSize = 0;
+            this.Step1.FlatAppearance.BorderSize = 0;
+            this.Step1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Step1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Step1.ForeColor = System.Drawing.Color.White;
+            this.Step1.Location = new System.Drawing.Point(31, 27);
+            this.Step1.Name = "Step1";
+            this.Step1.Size = new System.Drawing.Size(188, 50);
+            this.Step1.TabIndex = 0;
+            this.Step1.Text = "Step 1";
+            this.Step1.TextColor = System.Drawing.Color.White;
+            this.Step1.UseVisualStyleBackColor = false;
+            // 
             // Step2Box
             // 
+            this.Step2Box.Controls.Add(this.myButton5);
             this.Step2Box.Controls.Add(this.tableLayoutPanel2);
             this.Step2Box.Location = new System.Drawing.Point(49, 179);
             this.Step2Box.Name = "Step2Box";
@@ -340,6 +415,7 @@ namespace Exhibition
             // 
             // Step1Box
             // 
+            this.Step1Box.Controls.Add(this.AddImages);
             this.Step1Box.Controls.Add(this.SelectImage);
             this.Step1Box.Controls.Add(this.UploadImages);
             this.Step1Box.Controls.Add(this.ProjectName);
@@ -351,6 +427,25 @@ namespace Exhibition
             this.Step1Box.Size = new System.Drawing.Size(1642, 754);
             this.Step1Box.TabIndex = 1;
             this.Step1Box.TabStop = false;
+            // 
+            // AddImages
+            // 
+            this.AddImages.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.AddImages.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.AddImages.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.AddImages.BorderRadius = 15;
+            this.AddImages.BorderSize = 0;
+            this.AddImages.FlatAppearance.BorderSize = 0;
+            this.AddImages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddImages.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddImages.ForeColor = System.Drawing.Color.White;
+            this.AddImages.Location = new System.Drawing.Point(1412, 84);
+            this.AddImages.Name = "AddImages";
+            this.AddImages.Size = new System.Drawing.Size(188, 50);
+            this.AddImages.TabIndex = 0;
+            this.AddImages.Text = "Add Images";
+            this.AddImages.TextColor = System.Drawing.Color.White;
+            this.AddImages.UseVisualStyleBackColor = false;
             // 
             // SelectImage
             // 
@@ -404,6 +499,8 @@ namespace Exhibition
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.myButton2);
+            this.groupBox3.Controls.Add(this.myButton1);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.defect1);
             this.groupBox3.Controls.Add(this.label1);
@@ -412,6 +509,40 @@ namespace Exhibition
             this.groupBox3.Size = new System.Drawing.Size(191, 174);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
+            // 
+            // myButton2
+            // 
+            this.myButton2.BackColor = System.Drawing.Color.Orange;
+            this.myButton2.BackgroundColor = System.Drawing.Color.Orange;
+            this.myButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton2.BorderRadius = 17;
+            this.myButton2.BorderSize = 0;
+            this.myButton2.FlatAppearance.BorderSize = 0;
+            this.myButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton2.ForeColor = System.Drawing.Color.White;
+            this.myButton2.Location = new System.Drawing.Point(19, 91);
+            this.myButton2.Name = "myButton2";
+            this.myButton2.Size = new System.Drawing.Size(25, 25);
+            this.myButton2.TabIndex = 3;
+            this.myButton2.TextColor = System.Drawing.Color.White;
+            this.myButton2.UseVisualStyleBackColor = false;
+            // 
+            // myButton1
+            // 
+            this.myButton1.BackColor = System.Drawing.Color.Red;
+            this.myButton1.BackgroundColor = System.Drawing.Color.Red;
+            this.myButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton1.BorderRadius = 17;
+            this.myButton1.BorderSize = 0;
+            this.myButton1.FlatAppearance.BorderSize = 0;
+            this.myButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton1.ForeColor = System.Drawing.Color.White;
+            this.myButton1.Location = new System.Drawing.Point(19, 63);
+            this.myButton1.Name = "myButton1";
+            this.myButton1.Size = new System.Drawing.Size(25, 25);
+            this.myButton1.TabIndex = 3;
+            this.myButton1.TextColor = System.Drawing.Color.White;
+            this.myButton1.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -451,6 +582,8 @@ namespace Exhibition
             // 
             // Step3Box
             // 
+            this.Step3Box.Controls.Add(this.myButton4);
+            this.Step3Box.Controls.Add(this.myButton3);
             this.Step3Box.Controls.Add(this.tableLayoutPanel3);
             this.Step3Box.Controls.Add(this.tableLayoutPanel1);
             this.Step3Box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -459,6 +592,44 @@ namespace Exhibition
             this.Step3Box.Size = new System.Drawing.Size(1642, 754);
             this.Step3Box.TabIndex = 0;
             this.Step3Box.TabStop = false;
+            // 
+            // myButton4
+            // 
+            this.myButton4.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.myButton4.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.myButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton4.BorderRadius = 20;
+            this.myButton4.BorderSize = 0;
+            this.myButton4.FlatAppearance.BorderSize = 0;
+            this.myButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton4.ForeColor = System.Drawing.Color.White;
+            this.myButton4.Location = new System.Drawing.Point(37, 316);
+            this.myButton4.Name = "myButton4";
+            this.myButton4.Padding = new System.Windows.Forms.Padding(0, 0, 1410, 0);
+            this.myButton4.Size = new System.Drawing.Size(1566, 50);
+            this.myButton4.TabIndex = 2;
+            this.myButton4.Text = "Textile V1";
+            this.myButton4.TextColor = System.Drawing.Color.White;
+            this.myButton4.UseVisualStyleBackColor = false;
+            // 
+            // myButton3
+            // 
+            this.myButton3.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.myButton3.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.myButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton3.BorderRadius = 20;
+            this.myButton3.BorderSize = 0;
+            this.myButton3.FlatAppearance.BorderSize = 0;
+            this.myButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton3.ForeColor = System.Drawing.Color.White;
+            this.myButton3.Location = new System.Drawing.Point(37, 64);
+            this.myButton3.Name = "myButton3";
+            this.myButton3.Padding = new System.Windows.Forms.Padding(0, 0, 1400, 0);
+            this.myButton3.Size = new System.Drawing.Size(1566, 50);
+            this.myButton3.TabIndex = 2;
+            this.myButton3.Text = "Oil Seal V1";
+            this.myButton3.TextColor = System.Drawing.Color.White;
+            this.myButton3.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel3
             // 
@@ -469,6 +640,7 @@ namespace Exhibition
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.Deploy2, 4, 1);
             this.tableLayoutPanel3.Controls.Add(this.Map5, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.ConfThresh4, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.ModelName4, 0, 1);
@@ -486,6 +658,26 @@ namespace Exhibition
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1566, 125);
             this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // Deploy2
+            // 
+            this.Deploy2.BackColor = System.Drawing.Color.Turquoise;
+            this.Deploy2.BackgroundColor = System.Drawing.Color.Turquoise;
+            this.Deploy2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Deploy2.BorderRadius = 20;
+            this.Deploy2.BorderSize = 0;
+            this.Deploy2.FlatAppearance.BorderSize = 0;
+            this.Deploy2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Deploy2.ForeColor = System.Drawing.Color.White;
+            this.Deploy2.Location = new System.Drawing.Point(1348, 68);
+            this.Deploy2.Margin = new System.Windows.Forms.Padding(95, 5, 3, 3);
+            this.Deploy2.Name = "Deploy2";
+            this.Deploy2.Size = new System.Drawing.Size(125, 50);
+            this.Deploy2.TabIndex = 3;
+            this.Deploy2.Text = "Deploy";
+            this.Deploy2.TextColor = System.Drawing.Color.White;
+            this.Deploy2.UseVisualStyleBackColor = false;
+            this.Deploy2.Click += new System.EventHandler(this.Deploy2_Click);
             // 
             // Map5
             // 
@@ -617,6 +809,7 @@ namespace Exhibition
             this.tableLayoutPanel1.Controls.Add(this.ConfThresh2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.ModelName2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.Camera1, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Deploy1, 4, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(37, 120);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -737,6 +930,26 @@ namespace Exhibition
             this.Camera1.Name = "Camera1";
             this.Camera1.Size = new System.Drawing.Size(239, 31);
             this.Camera1.TabIndex = 2;
+            // 
+            // Deploy1
+            // 
+            this.Deploy1.BackColor = System.Drawing.Color.Crimson;
+            this.Deploy1.BackgroundColor = System.Drawing.Color.Crimson;
+            this.Deploy1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Deploy1.BorderRadius = 20;
+            this.Deploy1.BorderSize = 0;
+            this.Deploy1.FlatAppearance.BorderSize = 0;
+            this.Deploy1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Deploy1.ForeColor = System.Drawing.Color.White;
+            this.Deploy1.Location = new System.Drawing.Point(1348, 68);
+            this.Deploy1.Margin = new System.Windows.Forms.Padding(95, 5, 3, 3);
+            this.Deploy1.Name = "Deploy1";
+            this.Deploy1.Size = new System.Drawing.Size(125, 50);
+            this.Deploy1.TabIndex = 3;
+            this.Deploy1.Text = "Stop";
+            this.Deploy1.TextColor = System.Drawing.Color.White;
+            this.Deploy1.UseVisualStyleBackColor = false;
+            this.Deploy1.Click += new System.EventHandler(this.Deploy1_Click);
             // 
             // label2
             // 
@@ -986,19 +1199,80 @@ namespace Exhibition
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
+            // Next
+            // 
+            this.Next.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.Next.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.Next.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Next.BorderRadius = 20;
+            this.Next.BorderSize = 0;
+            this.Next.FlatAppearance.BorderSize = 0;
+            this.Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Next.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Next.ForeColor = System.Drawing.Color.White;
+            this.Next.Location = new System.Drawing.Point(1500, 967);
+            this.Next.Name = "Next";
+            this.Next.Size = new System.Drawing.Size(107, 50);
+            this.Next.TabIndex = 3;
+            this.Next.Text = "Next";
+            this.Next.TextColor = System.Drawing.Color.White;
+            this.Next.UseVisualStyleBackColor = false;
+            this.Next.Click += new System.EventHandler(this.myButton4_Click);
+            // 
+            // Back
+            // 
+            this.Back.BackColor = System.Drawing.Color.Transparent;
+            this.Back.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Back.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.Back.BorderRadius = 20;
+            this.Back.BorderSize = 1;
+            this.Back.FlatAppearance.BorderSize = 0;
+            this.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Back.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Back.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.Back.Location = new System.Drawing.Point(1353, 967);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(107, 50);
+            this.Back.TabIndex = 3;
+            this.Back.Text = "Back";
+            this.Back.TextColor = System.Drawing.Color.MediumSlateBlue;
+            this.Back.UseVisualStyleBackColor = false;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // myButton5
+            // 
+            this.myButton5.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.myButton5.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.myButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton5.BorderRadius = 20;
+            this.myButton5.BorderSize = 0;
+            this.myButton5.FlatAppearance.BorderSize = 0;
+            this.myButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.myButton5.ForeColor = System.Drawing.Color.White;
+            this.myButton5.Location = new System.Drawing.Point(37, 59);
+            this.myButton5.Name = "myButton5";
+            this.myButton5.Padding = new System.Windows.Forms.Padding(0, 0, 1370, 0);
+            this.myButton5.Size = new System.Drawing.Size(1566, 50);
+            this.myButton5.TabIndex = 2;
+            this.myButton5.Text = "Configurations";
+            this.myButton5.TextColor = System.Drawing.Color.White;
+            this.myButton5.UseVisualStyleBackColor = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Next);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.Step1Box);
             this.Controls.Add(this.Step2Box);
-            this.Controls.Add(this.Step3Box);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form2";
             this.Text = "Inspection AI";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.groupBox1.ResumeLayout(false);
             this.Step2Box.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1110,20 +1384,19 @@ namespace Exhibition
         private System.Windows.Forms.TextBox ProjectName;
         private System.Windows.Forms.Label UploadImages;
         private System.Windows.Forms.Label SelectImage;
-        private CustomUI.MyButton2 Step3;
-        private CustomUI.MyButton2 Step2;
-        private CustomUI.MyButton2 Step1;
-        private CustomUI.MyButton2 myButton6;
-        private CustomUI.MyButton2 myButton22;
-        private CustomUI.MyButton2 myButton21;
-        private CustomUI.MyButton2 myButton23;
-        private CustomUI.MyButton2 Next;
-        private CustomUI.MyButton2 Back;
-        private CustomUI.MyButton2 Deploy1;
-        private CustomUI.MyButton2 Deploy2;
-        private CustomUI.MyButton2 myButton24;
-        private CustomUI.MyButton2 myButton25;
-        private CustomUI.MyButton2 myButton26;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private CustomUI.MyButton Step1;
+        private CustomUI.MyButton Step2;
+        private CustomUI.MyButton Step3;
+        private CustomUI.MyButton AddImages;
+        private CustomUI.MyButton myButton1;
+        private CustomUI.MyButton myButton2;
+        private CustomUI.MyButton Next;
+        private CustomUI.MyButton Back;
+        private CustomUI.MyButton Deploy1;
+        private CustomUI.MyButton Deploy2;
+        private CustomUI.MyButton myButton3;
+        private CustomUI.MyButton myButton4;
+        private CustomUI.MyButton myButton5;
     }
 }
