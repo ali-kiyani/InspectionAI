@@ -103,6 +103,7 @@ namespace Exhibition
             this.label21 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Step2Box.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.Step1Box.SuspendLayout();
@@ -111,6 +112,7 @@ namespace Exhibition
             this.Step3Box.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -976,11 +978,20 @@ namespace Exhibition
             this.label22.TabIndex = 0;
             this.label22.Text = "Model Name";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(827, 1020);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(147, 55);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Step1Box);
             this.Controls.Add(this.Step2Box);
             this.Controls.Add(this.Step3Box);
@@ -1001,6 +1012,7 @@ namespace Exhibition
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1112,5 +1124,6 @@ namespace Exhibition
         private CustomUI.MyButton2 myButton24;
         private CustomUI.MyButton2 myButton25;
         private CustomUI.MyButton2 myButton26;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V2N7pqy6wtQqgLuN88czBuWk8owhbisdWI5+3sMz3vYgvyhKemIjSvef/nbdLXt+q9u2TMl4Mra7Sj2/oyPZeA==",
+  "dgSpecHash": "DrEs8AWM95nZy8eM7X/B0H5tC1O6G9c2+XyAa40663CYEmZ17etNCcHieDGoZKXjlJ1+TzQLeLcd4RINSdUDag==",
   "success": true,
-  "projectFilePath": "D:\\Visual Studio Repo\\Exhibition\\Exhibition\\InspectionAI.csproj",
+  "projectFilePath": "D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\Exhibition.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\malik\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
     "C:\\Users\\malik\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

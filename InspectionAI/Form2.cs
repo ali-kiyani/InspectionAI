@@ -23,6 +23,8 @@ namespace Exhibition
             Step3Box.Visible = false;
             Camera1.SelectedIndex = 1;
             SelectImage.Visible = false;
+            pictureBox2.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\Exhibition\\logo.png");
+
         }
 
         public void SetCurrentDeployment()
