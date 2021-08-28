@@ -17,13 +17,14 @@ namespace Exhibition
         {
             Form2instance = this;
             InitializeComponent();
+            pictureBox2.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\logo.png");
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             Back.Enabled = false;
             Back.Visible = false;
             Step2Box.Visible = false;
             Step3Box.Visible = false;
             Camera1.SelectedIndex = 1;
             SelectImage.Visible = false;
-            pictureBox2.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\logo.png");
 
         }
 

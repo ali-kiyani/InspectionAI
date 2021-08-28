@@ -233,4 +233,3 @@ D:\Visual Studio Repo\Exhibition\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition
 D:\Visual Studio Repo\Exhibition\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.dll
 D:\Visual Studio Repo\Exhibition\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.pdb
 D:\Visual Studio Repo\Exhibition\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.genruntimeconfig.cache
-D:\Visual Studio Repo\Exhibition\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.csprojAssemblyReference.cache

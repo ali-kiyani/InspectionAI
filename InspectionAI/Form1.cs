@@ -68,6 +68,7 @@ namespace Exhibition
                 Detections = new List<NewDetection>();
                 DefectsCount = 0;
                 GoodCount = 0;
+                CleanUI();
                 UpdateUI();
                 //UpdateChart();
             }
@@ -76,7 +77,7 @@ namespace Exhibition
                 this.CurrentDeployment = CurrentDeployment;
                 label8.Text = "-";
                 label6.Text = "-";
-                label7.Text = "";
+                label7.Text = "-";
             }
             else if (CurrentDeployment == 1 && this.CurrentDeployment != CurrentDeployment)
             {
@@ -89,8 +90,8 @@ namespace Exhibition
             {
                 this.CurrentDeployment = CurrentDeployment;
                 label8.Text = "Good";
-                label6.Text = "Print";
-                label7.Text = "Fade";
+                label6.Text = "Holes";
+                label7.Text = "Stains";
             }
     }
         public void UIHandler(NewDetection Detection)
@@ -98,6 +99,26 @@ namespace Exhibition
             HandleStructure(Detection);
             UpdateUI();
             //UpdateChart();
+        }
+
+        public void CleanUI()
+        {
+            pictureBox1.Image = null;
+            label1.Text = "-";
+            progressBar1.Value = 0;
+            label13.Text =  "-%";
+            pictureBox2.Image = null;
+            label2.Text = "-";
+            progressBar2.Value = 0;
+            label14.Text = "-%";
+            pictureBox3.Image = null;
+            label3.Text = "-";
+            progressBar3.Value = 0;
+            label15.Text = "-%";
+            pictureBox4.Image = null;
+            label4.Text = "-";
+            progressBar4.Value = 0;
+            label16.Text = "-%";
         }
 
         private void UpdateUI()
