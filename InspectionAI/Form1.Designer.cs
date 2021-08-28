@@ -74,6 +74,8 @@ namespace Exhibition
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -92,6 +94,7 @@ namespace Exhibition
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -341,7 +344,7 @@ namespace Exhibition
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(689, 875);
+            this.label6.Location = new System.Drawing.Point(696, 875);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(160, 45);
             this.label6.TabIndex = 5;
@@ -555,6 +558,24 @@ namespace Exhibition
             this.label18.Size = new System.Drawing.Size(77, 89);
             this.label18.TabIndex = 5;
             this.label18.Text = "0";
+            //
+            //chart
+            //
+            chartArea1.Name = "ChartArea1";
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            this.chart1.Series.Add("Defects");
+            this.chart1.Series.Add("Good");
+            chart1.Legends.Add("Defects");
+            chart1.Legends.Add("Good");
+            chart1.Series["Defects"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            chart1.Series["Good"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Location = new System.Drawing.Point(912, 689);
+            this.chart1.Name = "chart1";
+            this.chart1.Size = new System.Drawing.Size(817, 320);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "Insights";
             // 
             // Form1
             // 
@@ -587,6 +608,7 @@ namespace Exhibition
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.chart1);
             this.Name = "Form1";
             this.Text = "Inspection AI";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -612,6 +634,7 @@ namespace Exhibition
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

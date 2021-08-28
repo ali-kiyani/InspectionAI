@@ -90,8 +90,8 @@ namespace Exhibition
             {
                 this.CurrentDeployment = CurrentDeployment;
                 label8.Text = "Good";
-                label6.Text = "Holes";
-                label7.Text = "Stains";
+                label6.Text = "Stains";
+                label7.Text = "Holes"; 
             }
     }
         public void UIHandler(NewDetection Detection)
@@ -128,7 +128,14 @@ namespace Exhibition
             {
 
                 pictureBox1.Image = Image.FromFile(Detections[Size-1].FileName);
-                label1.Text = Enum.GetName(typeof(DetectionEnum), Detections[Size - 1].Type);
+                if (CurrentDeployment == 1)
+                {
+                    label1.Text = Enum.GetName(typeof(DetectionEnum), Detections[Size - 1].Type);
+                }
+                else if (CurrentDeployment == 2)
+                {
+                    label1.Text = Enum.GetName(typeof(TextileDetectionEnum), Detections[Size - 1].Type);
+                }
                 UpdateTextColor(Detections[Size - 1].Type, label1);
                 progressBar1.Value = Convert.ToInt32(Detections[Size - 1].Confidence * 100);
                 label13.Text = Convert.ToInt32(Detections[Size - 1].Confidence * 100) + "%";
@@ -137,7 +144,14 @@ namespace Exhibition
             if (Detections.Count >= 2)
             {
                 pictureBox2.Image = Image.FromFile(Detections[Size - 2].FileName);
-                label2.Text = Enum.GetName(typeof(DetectionEnum), Detections[Size - 2].Type);
+                if (CurrentDeployment == 1)
+                {
+                    label2.Text = Enum.GetName(typeof(DetectionEnum), Detections[Size - 2].Type);
+                }
+                else if (CurrentDeployment == 2)
+                {
+                    label2.Text = Enum.GetName(typeof(TextileDetectionEnum), Detections[Size - 2].Type);
+                }
                 UpdateTextColor(Detections[Size - 2].Type, label2);
                 progressBar2.Value = Convert.ToInt32(Detections[Size - 2].Confidence * 100);
                 label14.Text = Convert.ToInt32(Detections[Size - 2].Confidence * 100) + "%";
@@ -146,7 +160,14 @@ namespace Exhibition
             if (Detections.Count >= 3)
             {
                 pictureBox3.Image = Image.FromFile(Detections[Size - 3].FileName);
-                label3.Text = Enum.GetName(typeof(DetectionEnum), Detections[Size - 3].Type);
+                if (CurrentDeployment == 1)
+                {
+                    label3.Text = Enum.GetName(typeof(DetectionEnum), Detections[Size - 3].Type);
+                }
+                else if (CurrentDeployment == 2)
+                {
+                    label3.Text = Enum.GetName(typeof(TextileDetectionEnum), Detections[Size - 3].Type);
+                }
                 UpdateTextColor(Detections[Size - 3].Type, label3);
                 progressBar3.Value = Convert.ToInt32(Detections[Size - 3].Confidence * 100);
                 label15.Text = Convert.ToInt32(Detections[Size - 3].Confidence * 100) + "%";
@@ -155,7 +176,14 @@ namespace Exhibition
             if (Detections.Count >= 4)
             {
                 pictureBox4.Image = Image.FromFile(Detections[Size - 4].FileName);
-                label4.Text = Enum.GetName(typeof(DetectionEnum), Detections[Size - 4].Type);
+                if (CurrentDeployment == 1)
+                {
+                    label4.Text = Enum.GetName(typeof(DetectionEnum), Detections[Size - 4].Type);
+                }
+                else if (CurrentDeployment == 2)
+                {
+                    label4.Text = Enum.GetName(typeof(TextileDetectionEnum), Detections[Size - 4].Type);
+                }
                 UpdateTextColor(Detections[Size - 4].Type, label4);
                 progressBar4.Value = Convert.ToInt32(Detections[Size - 4].Confidence * 100);
                 label16.Text = Convert.ToInt32(Detections[Size - 4].Confidence * 100) + "%";
@@ -196,6 +224,8 @@ namespace Exhibition
         {
             chart1.Series["Defects"].Points.Clear();
             chart1.Series["Good"].Points.Clear();
+            chart1.Series["Defects"].Color = Color.Red;
+            chart1.Series["Good"].Color = Color.Green;
             if (ChartDuration == 0)
             {
                 var today = Detections.FindAll(x => x.Datetime.DayOfYear.Equals(DateTime.Now.DayOfYear));

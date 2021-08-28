@@ -24,8 +24,10 @@ namespace Exhibition
             Step2Box.Visible = false;
             Step3Box.Visible = false;
             Camera1.SelectedIndex = 1;
+            Camera2.SelectedIndex = 0;
             SelectImage.Visible = false;
-
+            this.CurrentDeployment = Form1.Form1Instance.CurrentDeployment;
+            InitDeployments();
         }
 
         public void SetCurrentDeployment()
@@ -198,6 +200,43 @@ namespace Exhibition
                 Deploy1.Text = "Deploy";
                 this.Deploy1.BackColor = System.Drawing.Color.Turquoise;
                 this.Deploy1.BackgroundColor = System.Drawing.Color.Turquoise;
+            }
+        }
+
+        public void InitDeployments()
+        {
+            if (CurrentDeployment == 0)
+            {
+                Camera1.SelectedIndex = 0;
+                Camera2.SelectedIndex = 0;
+                Deploy2.Text = "Deploy";
+                this.Deploy2.BackColor = System.Drawing.Color.Turquoise;
+                this.Deploy2.BackgroundColor = System.Drawing.Color.Turquoise;
+                Deploy1.Text = "Deploy";
+                this.Deploy1.BackColor = System.Drawing.Color.Turquoise;
+                this.Deploy1.BackgroundColor = System.Drawing.Color.Turquoise;
+            }
+            else if (CurrentDeployment == 1)
+            {
+                Camera1.SelectedIndex = 1;
+                Camera2.SelectedIndex = 0;
+                Deploy2.Text = "Deploy";
+                this.Deploy2.BackColor = System.Drawing.Color.Turquoise;
+                this.Deploy2.BackgroundColor = System.Drawing.Color.Turquoise;
+                this.Deploy1.Text = "Stop";
+                this.Deploy1.BackColor = System.Drawing.Color.Crimson;
+                this.Deploy1.BackgroundColor = System.Drawing.Color.Crimson;
+            }
+            else if (CurrentDeployment == 2)
+            {
+                Camera2.SelectedIndex = 1;
+                Camera1.SelectedIndex = 0;
+                Deploy1.Text = "Deploy";
+                this.Deploy1.BackColor = System.Drawing.Color.Turquoise;
+                this.Deploy1.BackgroundColor = System.Drawing.Color.Turquoise;
+                this.Deploy2.Text = "Stop";
+                this.Deploy2.BackColor = System.Drawing.Color.Crimson;
+                this.Deploy2.BackgroundColor = System.Drawing.Color.Crimson;
             }
         }
     }
