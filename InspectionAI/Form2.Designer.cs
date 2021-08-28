@@ -37,6 +37,7 @@ namespace Exhibition
             this.Step2 = new Exhibition.CustomUI.MyButton();
             this.Step1 = new Exhibition.CustomUI.MyButton();
             this.Step2Box = new System.Windows.Forms.GroupBox();
+            this.myButton5 = new Exhibition.CustomUI.MyButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.MAP = new System.Windows.Forms.TextBox();
             this.Precision = new System.Windows.Forms.TextBox();
@@ -116,7 +117,6 @@ namespace Exhibition
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Next = new Exhibition.CustomUI.MyButton();
             this.Back = new Exhibition.CustomUI.MyButton();
-            this.myButton5 = new Exhibition.CustomUI.MyButton();
             this.groupBox1.SuspendLayout();
             this.Step2Box.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -207,6 +207,26 @@ namespace Exhibition
             this.Step2Box.Size = new System.Drawing.Size(1642, 754);
             this.Step2Box.TabIndex = 0;
             this.Step2Box.TabStop = false;
+            // 
+            // myButton5
+            // 
+            this.myButton5.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.myButton5.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.myButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton5.BorderRadius = 20;
+            this.myButton5.BorderSize = 0;
+            this.myButton5.FlatAppearance.BorderSize = 0;
+            this.myButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.myButton5.ForeColor = System.Drawing.Color.White;
+            this.myButton5.Location = new System.Drawing.Point(37, 59);
+            this.myButton5.Name = "myButton5";
+            this.myButton5.Padding = new System.Windows.Forms.Padding(0, 0, 1370, 0);
+            this.myButton5.Size = new System.Drawing.Size(1566, 50);
+            this.myButton5.TabIndex = 2;
+            this.myButton5.Text = "Configurations";
+            this.myButton5.TextColor = System.Drawing.Color.White;
+            this.myButton5.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel2
             // 
@@ -446,6 +466,7 @@ namespace Exhibition
             this.AddImages.Text = "Add Images";
             this.AddImages.TextColor = System.Drawing.Color.White;
             this.AddImages.UseVisualStyleBackColor = false;
+            this.AddImages.Click += new System.EventHandler(this.myButton6_Click);
             // 
             // SelectImage
             // 
@@ -1239,26 +1260,6 @@ namespace Exhibition
             this.Back.UseVisualStyleBackColor = false;
             this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
-            // myButton5
-            // 
-            this.myButton5.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.myButton5.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.myButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.myButton5.BorderRadius = 20;
-            this.myButton5.BorderSize = 0;
-            this.myButton5.FlatAppearance.BorderSize = 0;
-            this.myButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.myButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.myButton5.ForeColor = System.Drawing.Color.White;
-            this.myButton5.Location = new System.Drawing.Point(37, 59);
-            this.myButton5.Name = "myButton5";
-            this.myButton5.Padding = new System.Windows.Forms.Padding(0, 0, 1370, 0);
-            this.myButton5.Size = new System.Drawing.Size(1566, 50);
-            this.myButton5.TabIndex = 2;
-            this.myButton5.Text = "Configurations";
-            this.myButton5.TextColor = System.Drawing.Color.White;
-            this.myButton5.UseVisualStyleBackColor = false;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1267,7 +1268,9 @@ namespace Exhibition
             this.Controls.Add(this.Back);
             this.Controls.Add(this.Next);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Step1Box);
             this.Controls.Add(this.Step2Box);
+            this.Controls.Add(this.Step3Box);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form2";
             this.Text = "Inspection AI";
