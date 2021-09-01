@@ -8,6 +8,6 @@ namespace Exhibition.Backend.Controllers
     {
         GOOD,
         SCRATCH,
-        DENT
+        INNERCUT
     }
 }

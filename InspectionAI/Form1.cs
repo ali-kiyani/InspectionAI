@@ -84,16 +84,16 @@ namespace Exhibition
                 this.CurrentDeployment = CurrentDeployment;
                 label8.Text = "Good";
                 label6.Text = "Scratchs";
-                label7.Text = "Dent";
+                label7.Text = "Innercut";
             }
             else if (CurrentDeployment == 2 && this.CurrentDeployment != CurrentDeployment)
             {
                 this.CurrentDeployment = CurrentDeployment;
                 label8.Text = "Good";
                 label6.Text = "Stains";
-                label7.Text = "Holes"; 
+                label7.Text = "Holes";
             }
-    }
+        }
         public void UIHandler(NewDetection Detection)
         {
             HandleStructure(Detection);
@@ -203,8 +203,8 @@ namespace Exhibition
                 label10.Text = TypeCountMap[(byte)DetectionEnum.SCRATCH].ToString();
             else
                 label10.Text = "0";
-            if (TypeCountMap.ContainsKey((byte)DetectionEnum.DENT))
-                label11.Text = TypeCountMap[(byte)DetectionEnum.DENT].ToString();
+            if (TypeCountMap.ContainsKey((byte)DetectionEnum.INNERCUT))
+                label11.Text = TypeCountMap[(byte)DetectionEnum.INNERCUT].ToString();
             else
                 label11.Text = "0";
             label12.Text = GoodCount.ToString();
@@ -218,7 +218,7 @@ namespace Exhibition
             {
                 label.ForeColor = Color.Green;
             }
-            else if (type == (byte)DetectionEnum.DENT)
+            else if (type == (byte)DetectionEnum.INNERCUT)
             {
                 label.ForeColor = Color.Red;
             }
@@ -242,7 +242,7 @@ namespace Exhibition
                     int Dcount = 0;
                     int Gcount = 0;
                     Gcount = items.Count(x => x.Type == (byte)DetectionEnum.GOOD);
-                    Dcount = items.Count(x => x.Type == (byte)DetectionEnum.DENT || x.Type == (byte)DetectionEnum.SCRATCH);
+                    Dcount = items.Count(x => x.Type == (byte)DetectionEnum.INNERCUT || x.Type == (byte)DetectionEnum.SCRATCH);
                     if (Dcount > 0)
                         chart1.Series["Defects"].Points.AddXY(Key.ToString(), Dcount);
                     if (Gcount > 0)
@@ -259,7 +259,7 @@ namespace Exhibition
                     int Dcount = 0;
                     int Gcount = 0;
                     Gcount = items.Count(x => x.Type == (byte)DetectionEnum.GOOD);
-                    Dcount = items.Count(x => x.Type == (byte)DetectionEnum.DENT || x.Type == (byte)DetectionEnum.SCRATCH);
+                    Dcount = items.Count(x => x.Type == (byte)DetectionEnum.INNERCUT || x.Type == (byte)DetectionEnum.SCRATCH);
                     if (Dcount > 0)
                         chart1.Series["Defects"].Points.AddXY(Key, Dcount);
                     if (Gcount > 0)

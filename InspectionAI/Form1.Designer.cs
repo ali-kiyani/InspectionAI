@@ -357,11 +357,11 @@ namespace Exhibition
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(431, 873);
+            this.label7.Location = new System.Drawing.Point(405, 873);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 45);
             this.label7.TabIndex = 5;
-            this.label7.Text = "Dent";
+            this.label7.Text = "Innercut";
             // 
             // label8
             // 
