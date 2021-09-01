@@ -7,7 +7,7 @@ namespace Exhibition.Backend.Controllers
     public enum TextileDetectionEnum
     {
         GOOD,
-        STRAIN,
+        STAIN,
         HOLE
     }
 }

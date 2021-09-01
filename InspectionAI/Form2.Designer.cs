@@ -572,7 +572,7 @@ namespace Exhibition
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Scratch";
+            this.label3.Text = "Stains";
             // 
             // defect1
             // 
@@ -581,7 +581,7 @@ namespace Exhibition
             this.defect1.Name = "defect1";
             this.defect1.Size = new System.Drawing.Size(41, 20);
             this.defect1.TabIndex = 2;
-            this.defect1.Text = "Dent";
+            this.defect1.Text = "Holes";
             // 
             // label1
             // 
