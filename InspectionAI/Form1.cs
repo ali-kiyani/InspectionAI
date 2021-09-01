@@ -38,14 +38,14 @@ namespace Exhibition
             progressBar2.Style = ProgressBarStyle.Continuous;
             progressBar3.Style = ProgressBarStyle.Continuous;
             progressBar4.Style = ProgressBarStyle.Continuous;
-            pictureBox1.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\default.jpg");
-            pictureBox2.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\default.jpg");
-            pictureBox3.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\default.jpg");
-            pictureBox4.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\default.jpg");
-            pictureBox12.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\power.png");
-            pictureBox10.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\home3.png");
-            pictureBox11.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\options.png");
-            pictureBox13.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\logo.png");
+            pictureBox1.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\default.jpg");
+            pictureBox2.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\default.jpg");
+            pictureBox3.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\default.jpg");
+            pictureBox4.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\default.jpg");
+            pictureBox12.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\power.png");
+            pictureBox10.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\home3.png");
+            pictureBox11.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\options.png");
+            pictureBox13.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\logo.png");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -101,21 +101,29 @@ namespace Exhibition
             UpdateChart();
         }
 
+        public void UIHandlerForBulk(List<NewDetection> Detection)
+        {
+            Detection.ForEach(x => HandleStructure(x));
+            //HandleStructure(Detection);
+            UpdateUI();
+            UpdateChart();
+        }
+
         public void CleanUI()
         {
-            pictureBox1.Image = null;
+            pictureBox1.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\default.jpg");
+            pictureBox2.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\default.jpg");
+            pictureBox3.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\default.jpg");
+            pictureBox4.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\default.jpg");
             label1.Text = "-";
             progressBar1.Value = 0;
             label13.Text =  "-%";
-            pictureBox2.Image = null;
             label2.Text = "-";
             progressBar2.Value = 0;
             label14.Text = "-%";
-            pictureBox3.Image = null;
             label3.Text = "-";
             progressBar3.Value = 0;
             label15.Text = "-%";
-            pictureBox4.Image = null;
             label4.Text = "-";
             progressBar4.Value = 0;
             label16.Text = "-%";

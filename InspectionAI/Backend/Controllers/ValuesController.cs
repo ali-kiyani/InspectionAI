@@ -26,11 +26,34 @@ namespace Exhibition.Controllers
             return Ok();
         }
 
-        /*[HttpGet]
-        public async Task<List<NewDetection>> GetlatestDetections()
+        [HttpGet("{v}")]
+        public ActionResult UpdateModel(String v)
         {
-            List<NewDetection> allDec = await _context.Detection.OrderByDescending(x => x.Datetime).Take(4).ToListAsync();
-            return await Task.FromResult(allDec);
-        }*/
+            if (v.Equals("v1"))
+            {
+                Program.MainForm.Invoke(new Action(() =>
+                {
+                    Program.MainForm.SetCurrentDeployment(1);
+                }));
+            } 
+            else if (v.Equals("v2"))
+            {
+                Program.MainForm.Invoke(new Action(() =>
+                {
+                    Program.MainForm.SetCurrentDeployment(2);
+                }));
+            }
+            return Ok();
+        }
+
+        [HttpPost]
+        public ActionResult FillData([FromBody] List<NewDetection> Detections)
+        {
+            Program.MainForm.Invoke(new Action(() =>
+            {
+                Program.MainForm.UIHandlerForBulk(Detections);
+            }));
+            return Ok();
+        }
     }
 }

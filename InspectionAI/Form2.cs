@@ -17,7 +17,7 @@ namespace Exhibition
         {
             Form2instance = this;
             InitializeComponent();
-            pictureBox2.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\logo.png");
+            pictureBox2.Image = Image.FromFile("D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\logo.png");
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             Back.Enabled = false;
             Back.Visible = false;

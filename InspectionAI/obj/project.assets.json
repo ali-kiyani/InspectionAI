@@ -8753,11 +8753,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\Exhibition.csproj",
+      "projectUniqueName": "D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\Exhibition.csproj",
       "projectName": "Exhibition",
-      "projectPath": "D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\Exhibition.csproj",
+      "projectPath": "D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\Exhibition.csproj",
       "packagesPath": "C:\\Users\\malik\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\obj\\",
+      "outputPath": "D:\\Visual Studio Repo\\Exhibition\\InspectionAI\\InspectionAI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\malik\\AppData\\Roaming\\NuGet\\NuGet.Config",
