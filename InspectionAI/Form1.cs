@@ -57,7 +57,8 @@ namespace Exhibition
             pictureBox10.BackColor = Color.Transparent;
             pictureBox11.BackColor = Color.Transparent;
             pictureBox12.BackColor = Color.Transparent;
-            
+            chartArea1.AxisX.Title = "Timeline (hrs)";
+            chartArea1.AxisY.Title = "Total";
         }
 
         public void SetCurrentDeployment(int CurrentDeployment)
@@ -234,11 +235,11 @@ namespace Exhibition
             chart1.Series["Good"].Points.Clear();
             if (ChartDuration == 0)
             {
-                var today = Detections.FindAll(x => x.Datetime.DayOfYear.Equals(DateTime.Now.DayOfYear));
-                today.Sort((x, y) => x.Datetime.DayOfYear.CompareTo(y.Datetime.DayOfYear));
+                var today = Detections.FindAll(x => x.Datetime.Date.Equals(DateTime.Now.Date));
+                today.Sort((x, y) => x.Datetime.CompareTo(y.Datetime));
                 foreach (var items in today.GroupBy(m => m.Datetime.Hour).ToList())
                 {
-                    int Key = items.Key + 1;
+                    int Key = items.Key;
                     int Dcount = 0;
                     int Gcount = 0;
                     Gcount = items.Count(x => x.Type == (byte)DetectionEnum.GOOD);
@@ -252,7 +253,7 @@ namespace Exhibition
             else if (ChartDuration == 1)
             {
                 var week = Detections.FindAll(x => x.Datetime >= DateTime.Now.AddDays(-6));
-                week.Sort((x, y) => x.Datetime.DayOfYear.CompareTo(y.Datetime.DayOfYear));
+                week.Sort((x, y) => x.Datetime.CompareTo(y.Datetime));
                 foreach (var items in week.GroupBy(m => m.Datetime.DayOfWeek).ToList())
                 {
                     String Key = items.Key.ToString();
@@ -290,11 +291,13 @@ namespace Exhibition
             if (lastWeek.Checked == true)
             {
                 ChartDuration = 1;
+                chartArea1.AxisX.Title = "Timeline (Days)";
                 UpdateChart();
             }
             else if (Today.Checked == true)
             {
                 ChartDuration = 0;
+                chartArea1.AxisX.Title = "Timeline (hrs)";
                 UpdateChart();
             }
         }

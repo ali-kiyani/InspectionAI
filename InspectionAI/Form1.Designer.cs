@@ -74,7 +74,7 @@ namespace Exhibition
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            this.chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -99,15 +99,15 @@ namespace Exhibition
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Location = new System.Drawing.Point(70, 40);
+            this.groupBox1.Location = new System.Drawing.Point(56, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(400, 629);
+            this.groupBox1.Size = new System.Drawing.Size(467, 657);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -115,7 +115,7 @@ namespace Exhibition
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(342, 539);
+            this.label13.Location = new System.Drawing.Point(401, 567);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(36, 25);
             this.label13.TabIndex = 3;
@@ -123,26 +123,27 @@ namespace Exhibition
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(6, 576);
+            this.progressBar1.Location = new System.Drawing.Point(12, 604);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(388, 19);
+            this.progressBar1.Size = new System.Drawing.Size(445, 19);
             this.progressBar1.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(6, 510);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 26.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 540);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 45);
+            this.label1.Size = new System.Drawing.Size(37, 50);
             this.label1.TabIndex = 1;
             this.label1.Text = "-";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 26);
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(388, 459);
+            this.pictureBox1.Size = new System.Drawing.Size(447, 517);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -152,7 +153,7 @@ namespace Exhibition
             this.groupBox2.Controls.Add(this.progressBar2);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Location = new System.Drawing.Point(490, 40);
+            this.groupBox2.Location = new System.Drawing.Point(533, 40);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(400, 629);
             this.groupBox2.TabIndex = 1;
@@ -199,7 +200,7 @@ namespace Exhibition
             this.groupBox4.Controls.Add(this.progressBar4);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.pictureBox4);
-            this.groupBox4.Location = new System.Drawing.Point(1323, 40);
+            this.groupBox4.Location = new System.Drawing.Point(1345, 40);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(400, 629);
             this.groupBox4.TabIndex = 2;
@@ -246,7 +247,7 @@ namespace Exhibition
             this.groupBox3.Controls.Add(this.progressBar3);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.pictureBox3);
-            this.groupBox3.Location = new System.Drawing.Point(906, 40);
+            this.groupBox3.Location = new System.Drawing.Point(939, 40);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(400, 629);
             this.groupBox3.TabIndex = 3;
@@ -359,7 +360,7 @@ namespace Exhibition
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label7.Location = new System.Drawing.Point(405, 873);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 45);
+            this.label7.Size = new System.Drawing.Size(144, 45);
             this.label7.TabIndex = 5;
             this.label7.Text = "Innercut";
             // 
@@ -576,13 +577,17 @@ namespace Exhibition
             this.chart1.Size = new System.Drawing.Size(817, 320);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "Insights";
-            chart1.Series["Defects"].Color = Color.Red;
-            chart1.Series["Good"].Color = Color.Green;
+            chart1.Series["Defects"].Color = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            chart1.Series["Good"].Color = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(196)))), ((int)(((byte)(98)))));
+            chartArea1.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.AxisY.Interval = 1;
+
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -688,6 +693,7 @@ namespace Exhibition
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         public MyGroupBox groupBox1;
+        public System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1;
     }
 }
 

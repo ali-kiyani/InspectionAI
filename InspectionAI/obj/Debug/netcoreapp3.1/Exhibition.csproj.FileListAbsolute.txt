@@ -340,11 +340,11 @@ D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\bin\Debug\netcoreapp3
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.csprojAssemblyReference.cache
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.Form1.resources
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.Form2.resources
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.Properties.Resources.resources
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.csproj.GenerateResource.cache
+D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.GeneratedMSBuildEditorConfig.editorconfig
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.AssemblyInfoInputs.cache
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.AssemblyInfo.cs
 D:\Visual Studio Repo\Exhibition\InspectionAI\InspectionAI\obj\Debug\netcoreapp3.1\Exhibition.csproj.CoreCompileInputs.cache

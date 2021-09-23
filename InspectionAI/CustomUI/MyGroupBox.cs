@@ -8,16 +8,17 @@ namespace Exhibition
 {
     public class MyGroupBox : GroupBox
     {
-        public int BORDER_SIZE = 3;
+        public int BORDER_SIZE = 10;
+        Color c = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
             ControlPaint.DrawBorder(e.Graphics, ClientRectangle,
-                                         Color.Gray, BORDER_SIZE, ButtonBorderStyle.Inset,
-                                         Color.Gray, BORDER_SIZE, ButtonBorderStyle.Inset,
-                                         Color.Gray, BORDER_SIZE, ButtonBorderStyle.Inset,
-                                         Color.Gray, BORDER_SIZE, ButtonBorderStyle.Inset);
+                                         c, BORDER_SIZE, ButtonBorderStyle.Solid,
+                                         c, BORDER_SIZE, ButtonBorderStyle.Inset,
+                                         c, BORDER_SIZE, ButtonBorderStyle.Inset,
+                                         c, BORDER_SIZE, ButtonBorderStyle.Inset);
         }
     }
 }
