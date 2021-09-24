@@ -86,12 +86,18 @@ namespace Exhibition
                 label8.Text = "Good";
                 label6.Text = "Scratchs";
                 label7.Text = "Innercut";
+                label6.Visible = true;
+                label10.Visible = true;
+                pictureBox7.Visible = true;
             }
             else if (CurrentDeployment == 2 && this.CurrentDeployment != CurrentDeployment)
             {
                 this.CurrentDeployment = CurrentDeployment;
                 label8.Text = "Good";
                 label6.Text = "Stains";
+                label6.Visible = false;
+                label10.Visible = false;
+                pictureBox7.Visible = false;
                 label7.Text = "Holes";
             }
         }
